@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-bool digit(string n);
+bool digit(string k); // confuse how it passes, but yeah.
 string caesar_algo(string p, int k);
 
 int main(int argc, string argv[])
