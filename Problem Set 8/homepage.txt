@@ -1,0 +1,528 @@
+[HEADER]
+    <head>
+        <!-- Meta -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <!-- Frameworks -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+    </head>
+
+[HOME]
+        <main>
+            <div class="container mt-5">
+                <!-- Nav -->
+                <nav class="navbar navbar-expand-lg navbar-dark" id="nav">
+                    <div class="container">
+                        <span class="nav-span">Konbanwa</span>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarContent">
+                            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./index.html">Homepage</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./progress.html">CS50x 2024 Progression</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./about.html">About Me</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./donate.html">Donate</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <!-- Content -->
+                <section class="mb-2" id="content">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4 mb-2">
+                                    <img src="https://raw.githubusercontent.com/mkgp-dev/personal-cs50x-archive/refs/heads/main/Problem%20Set%208/media/default-picture.jpg" class="img-thumbnail" alt="ayaka_genshin_impact">
+                                </div>
+                                <div class="col-md-8">
+                                    <figure>
+                                        <blockquote class="blockquote">
+                                            <p>If I don't have to do it, I won't. If I have to do it, then make it quick.</p>
+                                        </blockquote>
+                                        <figcaption class="blockquote-footer">
+                                            Houtarou Oreki in <cite>Hyouka</cite>
+                                        </figcaption>
+                                    </figure>
+                                    <hr>
+                                    <h4>Brief description of myself</h4>
+                                    <p>I'm a motivated self-taught Web Developer with a decade of dedication to learning and mastering web development tools and technologies. Former Deck Cadet with extensive maritime experience, now pursuing a passion for building efficient, user-friendly websites. Committed to lifelong learning and leveraging diverse skills to create impactful digital solutions. Alongside mastering web development, I am skilled in photo editing and video editing.</p>
+                                    <div class="d-grid gap-2 mb-2">
+                                        <button id="funny-js" class="btn btn-primary" type="button"><i class="fa-solid fa-face-smile"></i></button>
+                                    </div>
+                                    <svg width="100%" height="120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false">
+                                        <title>Placeholder</title>
+                                        <rect width="100%" height="100%" fill="#868e96">
+                                        </rect>
+                                        <text x="50%" y="50%" fill="#dee2e6" text-anchor="middle" dominant-baseline="middle">Ads</text>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Modal -->
+                <div class="modal fade" id="funnyModal" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">This is CS50</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <video class="w-100" autoplay muted loop>
+                                    <source src="https://i.imgur.com/bQ22FDK.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+[PROGRESS]
+        <main>
+            <div class="container mt-5">
+                <!-- Nav -->
+                <nav class="navbar navbar-expand-lg navbar-dark" id="nav">
+                    <div class="container">
+                        <span class="nav-span">Konbanwa</span>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarContent">
+                            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./index.html">Homepage</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./progress.html">CS50x 2024 Progression</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./about.html">About Me</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./donate.html">Donate</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <!-- Content -->
+                <section class="mb-3" id="content">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2>What is this?</h2>
+                            <p>This is just my current progress in CS50x 2024.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Week 0 -->
+                <section class="mb-3" id="w0">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2>Week 0</h2>
+                            <hr>
+                            <div class="progress" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 100%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Week 1 -->
+                <section class="mb-3" id="w1">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2>Week 1</h2>
+                            <hr>
+                            <div class="progress" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 100%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Week 2 -->
+                <section class="mb-3" id="w2">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2>Week 2</h2>
+                            <hr>
+                            <div class="progress" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 100%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Week 3 -->
+                <section class="mb-3" id="w3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2>Week 3</h2>
+                            <hr>
+                            <div class="progress" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 100%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Week 4 -->
+                <section class="mb-3" id="w4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2>Week 4</h2>
+                            <hr>
+                            <div class="progress" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 100%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Week 5 -->
+                <section class="mb-3" id="w5">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2>Week 5</h2>
+                            <hr>
+                            <div class="progress" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 100%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Week 6 -->
+                <section class="mb-3" id="w6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2>Week 6</h2>
+                            <hr>
+                            <div class="progress" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 100%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Week 7 -->
+                <section class="mb-3" id="w7">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2>Week 7</h2>
+                            <hr>
+                            <div class="progress" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 100%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Week 8 -->
+                <section class="mb-3" id="w8">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2>Week 8</h2>
+                            <hr>
+                            <div class="progress" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 100%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Week 9 -->
+                <section class="mb-3" id="w9">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2>Week 9</h2>
+                            <hr>
+                            <div class="progress" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Final project -->
+                <section class="mb-3" id="fp">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2>Final project</h2>
+                            <hr>
+                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+[ABOUT]
+        <main>
+            <div class="container mt-5">
+                <!-- Nav -->
+                <nav class="navbar navbar-expand-lg navbar-dark" id="nav">
+                    <div class="container">
+                        <span class="nav-span">Konbanwa</span>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarContent">
+                            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./index.html">Homepage</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./progress.html">CS50x 2024 Progression</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./about.html">About Me</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./donate.html">Donate</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <!-- About page -->
+                <section class="mb-3" id="about">
+                    <div class="card">
+                        <div class="card-body">
+                            <header>
+                                <h2 class="card-title">Mark Kenneth Pelayo</h2>
+                                <h5 class="card-subtitle mb-2 text-muted">Aspiring Full-stack Web Developer</h5>
+                            </header>
+                            <hr>
+                            <div>
+                                <h4>Skills</h4>
+                                <ol class="list-group mb-4">
+                                    <li class="list-group-item"><strong>Frontend</strong> HTML, CSS, Javascript</li>
+                                    <li class="list-group-item"><strong>Backend</strong> Node.js</li>
+                                    <li class="list-group-item"><strong>Databases</strong> MySQL, SQLite3</li>
+                                    <li class="list-group-item"><strong>Tools & Platforms</strong> Git, Sublime text editor, npm</li>
+                                    <li class="list-group-item"><strong>Photo Editing</strong> Adobe Photoshop</li>
+                                    <li class="list-group-item"><strong>Video Editing & Content Creation</strong> Adobe Premiere Pro, OBS Studio</li>
+                                    <li class="list-group-item"><strong>Soft Skills</strong> Problem-solving, creativity, adaptability, teamwork</li>
+                                </ol>
+                            </div>
+
+                            <div>
+                                <h4>Education</h4>
+                                <ol class="list-group mb-4">
+                                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                                        <div class="me-auto">
+                                            <div class="fw-bold">Completed Classroom Instruction in BS Maritime Transportation</div>
+                                            Asian Institute of Maritime Studies
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                                        <div class="me-auto">
+                                            <div class="fw-bold">Self-Taught Web Development</div>
+                                            Learned the fundamentals of modern web development through self-study and personal projects
+                                        </div>
+                                    </li>
+                                </ol>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </main>
+
+[DONATE]
+        <main>
+            <div class="container mt-5">
+                <!-- Nav -->
+                <nav class="navbar navbar-expand-lg navbar-dark" id="nav">
+                    <div class="container">
+                        <span class="nav-span">Konbanwa</span>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarContent">
+                            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./index.html">Homepage</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./progress.html">CS50x 2024 Progression</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./about.html">About Me</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./donate.html">Donate</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <!-- Donate -->
+                <section class="mb-3" id="donate">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>Donate via Cryptocurrency</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <strong>Solana</strong> DZpP5We6oLqW3XAi9ProBp23LHwdaAUajxXGUzFfHRZY
+                                </li>
+                                <li class="list-group-item">
+                                    <strong>Ethereum</strong> 0xd04eA67E6E92f2adc038e10dF173714D8851bed6
+                                </li>
+                                <li class="list-group-item">
+                                    <strong>Bitcoin</strong> bc1qnjz7h99p7n8q0ygzdl0kf46csz8h5l6f62z77h
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </main>
+
+[FOOTER - for HOME]
+        <script>
+            // Calling modal
+            document.addEventListener('DOMContentLoaded', function () {
+                const funny = document.getElementById('funnyModal');
+
+                document.getElementById('funny-js').addEventListener('click', function () {
+                    const modalInstance = bootstrap.Modal.getOrCreateInstance(funny);
+                    modalInstance.show();
+                });
+            });
+        </script>
+
+[STYLESHEET]
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* Modify Boostrap Framework */
+body {
+    font-family: "Figtree", sans-serif;
+    color: #fff;
+    background-color: #282828;
+}
+
+.card {
+    border: none;
+}
+
+.card-body {
+    background-color: #3f3f3f;
+}
+
+.img-thumbnail {
+    background-color: #282828;
+    border: none;
+    border-radius: 0;
+}
+
+.nav-span {
+    color: #be535c;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#nav {
+    background-color: #333232;
+    color: #fff;
+    border-bottom: 2px solid #444;
+    padding: 0;
+}
+
+#nav .nav-link {
+    color: #be535c;
+    border-radius: 0 !important;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+#nav .nav-link.active {
+    background-color: #b13847 !important;
+    color: #fff;
+}
+
+#nav .nav-link:hover {
+    color: #d58587;
+}
+
+#nav ul {
+    flex-wrap: wrap;
+}
+
+.btn-primary {
+    background-color: #b13847;
+    border: none;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #d58587;
+    --bs-btn-active-border-color: #d58587;
+}
+
+.btn:hover {
+    background-color: #be535c;
+}
+
+.modal-content {
+    background-color: #3f3f3f;
+}
+
+.modal-header {
+    border-bottom: 1px solid #282828;
+}
+
+.progress-bar {
+    background-color: #b13847;
+}
+
+.progress {
+    background-color: #282828;
+}
+
+.list-group-item {
+    color: #fff;
+    background-color: #575757;
+}
+
+/* Mobile compatibility */
+@media (max-width: 576px) {
+    #nav {
+        padding: 5px;
+    }
+
+    #nav .navbar-collapse {
+        text-align: center;
+    }
+
+    #nav .nav-link {
+        padding: 10px 15px;
+    }
+}
