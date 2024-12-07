@@ -1,0 +1,195 @@
+[HTML]
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- Simple multiple choice with buttons -->
+                 <h3>What is it that I aspire to become?</h3>
+                 <p class="bottom-margin" id="mc-log"></p>
+                 <div class="choices">
+                    <button type="button" id="mc" data-id="0">Full-stack Web Developer</button>
+                    <button type="button" id="mc" data-id="1">C# Programmer</button>
+                    <button type="button" id="mc" data-id="2">Python Programmer</button>
+                    <button type="button" id="mc" data-id="3">Teach Programming</button>
+                    <button type="button" id="mc" data-id="4">None of the above</button>
+                 </div>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- Simple input and button -->
+                <h3>What is my github username?</h3>
+                <p class="bottom-margin" id="fr-log"></p>
+                <div class="form-group">
+                    <input type="text" class="form-input" id="fr-ans">
+                    <button type="button" id="fr-confirm">Submit</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Moved script tag at bottom so that it loads all classes that I need -->
+        <!-- You can use "DOMContentLoaded" but this is my style -->
+        <script>
+            // Multiple choice
+            // Variables
+            const mcl = document.getElementById('mc-log');
+            const btnmc = document.querySelectorAll('div.choices > button');
+
+            // Loop all buttons under div.choices
+            for(var i = 0; i < btnmc.length; i++) {
+                btnmc[i].addEventListener('click', (e) => {
+                    const btn = e.target;
+
+                    // Reset all
+                    for (var j = 0; j < btnmc.length; j++) {
+                        btnmc[j].style.backgroundColor = '';
+                    }
+
+                    mcl.innerHTML = '';
+
+                    // Define correct answer
+                    if (btn.dataset.id == 0) {
+                        btn.style.backgroundColor = 'green';
+                        mcl.innerHTML = '<span class="valid">Correct!</span>';
+                    } else {
+                        btn.style.backgroundColor = 'red';
+                        mcl.innerHTML = '<span class="invalid">Incorrect</span>';
+                    }
+                });
+            }
+
+            // Free response
+            // Variable
+            const frl = document.getElementById('fr-log');
+            const btnfr = document.getElementById('fr-confirm');
+            const inpfr = document.getElementById('fr-ans');
+
+            btnfr.addEventListener('click', (e) => {
+                e.preventDefault();
+
+                // Reset all
+                frl.innerHTML = '';
+
+                // Define correct answer
+                if (inpfr.value == 'mkgp-dev') {
+                    frl.innerHTML = '<span class="valid">Correct!</span>';
+                } else {
+                    frl.innerHTML = '<span class="invalid">Incorrect</span>';
+                }
+            });
+        </script>
+    </body>
+</html>
+
+[STYLESHEET]
+body {
+    /** Make the whole page Montserrat **/
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
+    color: #212529;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    text-align: left;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header {
+    background-color: #477bff;
+    color: #fff;
+    margin-bottom: 2rem;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.section {
+    padding: 0.5rem 2rem 1rem 2rem;
+}
+
+.section:hover {
+    background-color: #f5f5f5;
+    transition: color 2s ease-in-out, background-color 0.15s ease-in-out;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+button, input[type="submit"] {
+    background-color: #68a9e3;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    font-size: 0.95rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0.375rem 0.75rem;
+    text-align: center;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    vertical-align: middle;
+}
+
+/** Re'design a bit the button **/
+button:hover {
+    background-color: #d9edff;
+}
+
+
+input[type="text"] {
+    line-height: 1.8;
+    width: 25%;
+    /** Give some space with button or other elements **/
+    margin-right: 10px;
+}
+
+input[type="text"]:hover {
+    background-color: #f5f5f5;
+    transition: color 2s ease-in-out, background-color 0.15s ease-in-out;
+}
+
+/* @mkgp-dev */
+h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+.bottom-margin {
+    margin-bottom: 10px;
+}
+
+.valid {
+    color: green;
+}
+
+.invalid {
+    color: red;
+}
+
+.form-group {
+    padding: 0;
+}
+
+.form-input {
+    border: 1px solid #4c4c4c;
+    box-sizing: border-box;
+}
