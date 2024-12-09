@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Sell shares
+{% endblock %}
+
+{% block main %}
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">Sell your shares</div>
+                <div class="card-body">
+                    <form action="/sell" method="post">
+                        <div class="mb-3">
+                            <select class="form-select" id="symbol" name="symbol">
+                                <option value="" selected disabled>Choose your shares</option>
+                            {% for option in options %}
+                            <option value="{{ option['symbol'] }}">{{ option['symbol'] }} ({{ option['total_amount'] }})</option>
+                            {% endfor %}
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <input autocomplete="off" autofocus class="form-control" name="shares" placeholder="Enter your amount" type="number">
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" id="submit" class="btn btn-primary">Sell</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Buy shares
+{% endblock %}
+
+{% block main %}
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">Buy shares</div>
+                <div class="card-body">
+                    <form action="/buy" method="post">
+                        <div class="mb-3">
+                            <input autocomplete="off" autofocus class="form-control" name="symbol" placeholder="Enter a symbol" type="text">
+                        </div>
+                        <div class="mb-3">
+                            <input autocomplete="off" autofocus class="form-control" name="shares" placeholder="Enter your amount" type="number">
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" id="submit" class="btn btn-primary">Buy</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+{% endblock %}

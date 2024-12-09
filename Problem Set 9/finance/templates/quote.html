@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Dashboard
+{% endblock %}
+
+{% block main %}
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+        {% if result %}
+            <div class="list-group">
+                <p class="list-group-item">{{ result | safe }}</p>
+            </div>
+        {% endif %}
+
+            <div class="card">
+                <div class="card-header">Quote</div>
+                <div class="card-body">
+                    <form action="/quote" method="post">
+                        <div class="mb-3">
+                            <input autocomplete="off" autofocus class="form-control" name="symbol" placeholder="Enter a symbol" type="text">
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" id="submit" class="btn btn-primary">Search</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+{% endblock %}

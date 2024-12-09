@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+    <!-- Re'design login -->
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">Login</div>
+                <div class="card-body">
+                    <form action="/login" method="post">
+                        <div class="mb-3">
+                            <input autocomplete="off" autofocus class="form-control" name="username" placeholder="Username" type="text">
+                        </div>
+                        <div class="mb-3">
+                            <input class="form-control" name="password" placeholder="Password" type="password">
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" id="submit" class="btn btn-primary">Login your account</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+{% endblock %}

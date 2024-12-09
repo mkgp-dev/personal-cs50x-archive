@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+    <!-- Re'design login -->
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">Profile</div>
+                <div class="card-body">
+                    <form action="/profile" method="post">
+                        <input name="id" value="{{ id }}" hidden>
+                        <div class="mb-3">
+                            <input autocomplete="off" class="form-control" placeholder="Username" value="{{ username }}" type="text" disabled>
+                        </div>
+                        <div class="mb-3">
+                            <input class="form-control" name="password" placeholder="Enter your new password" type="password">
+                        </div>
+                        <div class="mb-3">
+                            <input class="form-control" name="confirmation" placeholder="Confirm your new password" type="password">
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" id="submit" class="btn btn-primary">Change your password</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+{% endblock %}

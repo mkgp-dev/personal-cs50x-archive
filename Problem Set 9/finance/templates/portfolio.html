@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Your portfolio
+{% endblock %}
+
+{% block main %}
+<div class="row">
+    <div class="col-md-8">
+        <h1>List of stocks</h1>
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>Symbol</th>
+                    <th>Shares</th>
+                    <th>Current price</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in table %}
+                <tr>
+                    <td>{{ row['symbol'] }}</td>
+                    <td>{{ row['shares'] }}</td>
+                    <td>{{ row['tPrice'] }}</td>
+                    <td>{{ row['tTotal'] }}</td>
+                </tr>
+                {% else %}
+                <tr>
+                    <td colspan="4">You don't have any shares.</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Portfolio</h4>
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Your balance
+                        <span class="badge bg-primary rounded-pill">{{ balance }}</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Your stocks
+                        <span class="badge bg-success rounded-pill">{{ portfolio }}</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
